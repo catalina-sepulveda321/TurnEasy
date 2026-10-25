@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurnEasy | Configuración</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="header-home">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo TurnEasy" class="logo-img">
+        </div>
+
+        <div class="usuario">
+            <span id="nombreUsuario">Bienvenido</span>
+            <img src="img/avatar.png" alt="Avatar del usuario">
+        </div>
+    </header>
+
+    <div class="contenedor-home">
+
+        <!-- MENU LATERAL -->
+
+        <aside class="menu-lateral">
+
+            <ul>
+
+                <li>
+                    <a href="home.html">🏠 Inicio</a>
+                </li>
+
+                <li>
+                    <a href="turnos.html">📋 Mis Turnos</a>
+                </li>
+
+                <li>
+                    <a href="perfil.html">👤 Mi Perfil</a>
+                </li>
+
+                <li>
+                    <a href="configuracion.html" class="activo">⚙ Configuración</a>
+                </li>
+
+                <li>
+                    <a href="acerca.html">ℹ️ Acerca de</a>
+                
+                </li>
+
+                    <a href="#" onclick="cerrarSesion()">🚪 Cerrar Sesión</a>
+
+                </li>
+            </ul>
+        </aside>
+
+        <main class="configuracion">
+
+            <h2>Configuración de la cuenta</h2>
+            <p>Administra tus datos personales y mantén tu información actualizada.</p>
+
+            <form id="formularioConfiguracion">
+
+                <div class="campo">
+                    <label for="configNombre">Nombre</label>
+                    <input
+                        type="text"
+                        id="configNombre"
+                        placeholder="Escribe tu nombre"
+                        autocomplete="given-name"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="configApellido">Apellidos</label>
+                    <input
+                        type="text"
+                        id="configApellido"
+                        placeholder="Escribe tus apellidos"
+                        autocomplete="family-name"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="configCorreo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="configCorreo"
+                        placeholder="ejemplo@correo.com"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                
+                <div class="campo">
+                    <label for="configCelular">Número de celular</label>
+
+                    <input
+                      type="tel"
+                      id="configCelular"
+                      placeholder="Escribe tu número de celular"
+                      autocomplete="tel"
+                      required
+                    >
+                </div>
+
+
+                <button type="submit">Guardar cambios</button>
+
+            </form>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>© 2026 TurnEasy | Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

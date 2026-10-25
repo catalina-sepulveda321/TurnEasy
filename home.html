@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TurnEasy | Página Principal</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header class="header-home">
+
+        <div class="logo">
+
+            <img src="img/logo.png" alt="TurnEasy" class="logo-img">
+
+        </div>
+
+        <div class="usuario">
+
+            <span id="nombreUsuario">Bienvenido</span>
+
+            <img src="img/avatar.png" alt="Usuario">
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENEDOR -->
+
+    <div class="contenedor-home">
+
+
+        <!-- MENU LATERAL -->
+
+        <aside class="menu-lateral">
+
+            <ul>
+
+                <li>
+                    <a href="home.html" class="activo">🏠 Inicio</a>
+                </li>
+
+                <li>
+                    <a href="turnos.html">📋 Mis Turnos</a>
+                </li>
+
+                <li>
+                    <a href="perfil.html">👤 Mi Perfil</a>
+                </li>
+
+                <li>
+                    <a href="configuracion.html">⚙ Configuración</a>
+                </li>
+
+                <li>
+                    <a href="acerca.html">ℹ️ Acerca de</a>
+                </li>
+
+                    <a href="#" onclick="cerrarSesion()">🚪 Cerrar Sesión</a>
+
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+        <!-- CONTENIDO PRINCIPAL -->
+
+        <main class="contenido">
+
+
+            <!-- BIENVENIDA -->
+
+            <section class="bienvenida">
+
+                <h2>¡Bienvenida a TurnEasy!</h2>
+
+                <p>
+                    Gestiona tus turnos de manera rápida y sencilla.
+                </p>
+
+            </section>
+
+
+           
+<!-- CATÁLOGO DE ESTABLECIMIENTOS -->
+
+<section class="servicios" id="servicios">
+
+    <h2>Establecimientos disponibles</h2>
+
+    <p>
+        Encuentra tu lugar favorito y reserva tu próximo turno.
+    </p>
+
+    <div class="servicios-grid">
+
+        <!-- ESTABLECIMIENTO 1 -->
+
+        <div class="servicio-card">
+
+            <img src="img/barberiablade.jpg"
+                 alt="Interior de una barbería">
+
+            <div class="servicio-info">
+
+                <h3>💈 Barbería Blade & Style</h3>
+
+                <p><strong>Categoría:</strong> Barbería</p>
+
+                <p><strong>Ubicación:</strong> Bogotá - Zona Centro</p>
+
+                <p>
+                    Cortes de cabello, arreglo de barba
+                    y cuidado personal.
+                </p>
+
+                <button type="button"
+                    onclick="seleccionarEstablecimiento('Barbería El Estilo', 'Barbería')">
+                    Ver servicios
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ESTABLECIMIENTO 2 -->
+
+        <div class="servicio-card">
+
+            <img src="img/barberiataller.jpg"
+                 alt="Barbería moderna">
+
+            <div class="servicio-info">
+
+                <h3>✂️ Barbería El Taller Del Caballero</h3>
+
+                <p><strong>Categoría:</strong> Barbería</p>
+
+                <p><strong>Ubicación:</strong> Bogotá - Zona Centro</p>
+
+                <p>
+                    Cortes clásicos, modernos y perfilado
+                    de barba.
+                </p>
+
+                <button type="button"
+                    onclick="seleccionarEstablecimiento('Barbería Central', 'Barbería')">
+                    Ver servicios
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ESTABLECIMIENTO 3 -->
+
+        <div class="servicio-card">
+
+            <img src="img/peluqueria.jpg"
+                 alt="Salón de peluquería">
+
+            <div class="servicio-info">
+
+                <h3>💇 Salón Bella Imagen</h3>
+
+                <p><strong>Categoría:</strong> Peluquería</p>
+
+                <p><strong>Ubicación:</strong> Bogotá - Zona Sur</p>
+
+                <p>
+                    Cortes, peinados y tratamientos
+                    capilares.
+                </p>
+
+                <button type="button"
+                    onclick="seleccionarEstablecimiento('Salón Bella Imagen', 'Peluquería')">
+                    Ver servicios
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ESTABLECIMIENTO 4 -->
+
+        <div class="servicio-card">
+
+            <img src="img/manicure.jpg"
+                 alt="Estudio de manicure">
+
+            <div class="servicio-info">
+
+                <h3>💅 Studio de Uñas Manos de Seda</h3>
+
+                <p><strong>Categoría:</strong> Manicure</p>
+
+                <p><strong>Ubicación:</strong> Bogotá - Zona Sur</p>
+
+                <p>
+                    Manicure, pedicure y decoración
+                    de uñas.
+                </p>
+
+                <button type="button"
+                    onclick="seleccionarEstablecimiento('Studio de Uñas', 'Manicure')">
+                    Ver servicios
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ESTABLECIMIENTO 5 -->
+
+        <div class="servicio-card">
+
+            <img src="img/spa.jpg"
+                 alt="Centro de spa">
+
+            <div class="servicio-info">
+
+                <h3>🌿 Spa Bienestar y Refugio de Paz</h3>
+
+                <p><strong>Categoría:</strong> Spa</p>
+
+                <p><strong>Ubicación:</strong> Bogotá - Zona Norte</p>
+
+                <p>
+                    Tratamientos de relajación y cuidado
+                    personal.
+                </p>
+
+                <button type="button"
+                    onclick="seleccionarEstablecimiento('Spa Bienestar', 'Spa')">
+                    Ver servicios
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ESTABLECIMIENTO 6 -->
+
+        <div class="servicio-card">
+
+            <img src="img/odontologia.jpg"
+                 alt="Consultorio odontológico">
+
+            <div class="servicio-info">
+
+                <h3>🦷 Sonrisa Saludable</h3>
+
+                <p><strong>Categoría:</strong> Odontología</p>
+
+                <p><strong>Ubicación:</strong> Bogotá - Zona Norte</p>
+
+                <p>
+                    Consultas y servicios de cuidado dental.
+                </p>
+
+                <button type="button"
+                    onclick="seleccionarEstablecimiento('Sonrisa Saludable', 'Odontología')">
+                    Ver servicios
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+            © 2026 TurnEasy | Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

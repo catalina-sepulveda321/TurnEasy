@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TurnEasy | Mis Turnos</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header-home">
+
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo TurnEasy" class="logo-img">
+        </div>
+
+        <div class="usuario">
+            <span id="nombreUsuario">Bienvenido</span>
+            <img src="img/avatar.png" alt="Usuario">
+        </div>
+
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="contenedor-home">
+
+        <!-- MENU LATERAL -->
+
+        <aside class="menu-lateral">
+
+            <ul>
+
+                <li>
+                    <a href="home.html">🏠 Inicio</a>
+                </li>
+
+                <li>
+                    <a href="turnos.html" class="activo">📋 Mis Turnos</a>
+                </li>
+
+                <li>
+                    <a href="perfil.html">👤 Mi Perfil</a>
+                </li>
+
+                <li>
+                    <a href="configuracion.html">⚙ Configuración</a>
+                </li>
+
+                <li>
+                    <a href="acerca.html">ℹ️ Acerca de</a>
+                </li>
+
+                    <a href="#" onclick="cerrarSesion()">🚪 Cerrar Sesión</a>
+
+                </li>
+            </ul>
+
+        </aside>
+
+        <!-- CONTENIDO DE MIS TURNOS -->
+        <main class="contenido">
+
+            <section class="tabla" id="mis-turnos">
+
+                <h2>Mis próximos turnos</h2>
+
+                <p>
+                    Aquí puedes consultar tus citas, revisar sus detalles
+                    y cancelar las que ya no necesites.
+                </p>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Servicio</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tablaTurnos">
+                        <tr>
+                            <td colspan="5">Cargando tus turnos...</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 TurnEasy | Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JAVASCRIPT DEL PROYECTO -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

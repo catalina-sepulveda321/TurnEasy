@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TurnEasy | Agendar Cita</title>
+
+    <link rel="stylesheet"
+          href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header class="header-home">
+
+        <div class="logo">
+
+            <img src="img/logo.png" alt="TurnEasy" class="logo-img">
+
+        </div>
+
+        <div class="usuario">
+
+            <span>Agendar cita</span>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="formulario-cita">
+
+        <h2>Agendar una cita</h2>
+
+        <p>
+            Completa la información para reservar tu turno.
+        </p>
+
+
+        <form id="formularioCita">
+
+
+            <!-- SERVICIO -->
+
+            <div class="campo">
+
+                <label for="servicio">
+                    Servicio
+                </label>
+
+                <input
+                    type="text"
+                    id="servicio"
+                    readonly>
+
+            </div>
+
+
+            <!-- ESTABLECIMIENTO -->
+
+            <div class="campo">
+
+                <label for="establecimiento">
+                    Establecimiento
+                </label>
+
+                <select id="establecimiento">
+
+                    <option value="">
+                        Seleccione un establecimiento
+                    </option>
+
+                    <option value="TurnEasy Centro">
+                        TurnEasy Centro
+                    </option>
+
+                    <option value="Belleza y Estilo">
+                        Belleza y Estilo
+                    </option>
+
+                    <option value="Zona Premium">
+                        Zona Premium
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- FECHA -->
+
+            <div class="campo">
+
+                <label for="fechaCita">
+                    Fecha
+                </label>
+
+                <input
+                    type="date"
+                    id="fechaCita"
+                    name="fechaCita"
+                    required>
+
+            </div>
+
+
+            <!-- HORA -->
+
+            <div class="campo">
+
+                <label for="horaCita">
+                    Hora disponible
+                </label>
+
+                <select id="horaCita" name="horaCita" required>
+                    <option value="">
+                        Selecciona una fecha y un establecimiento
+                    </option>
+                </select>
+                
+            </div>
+
+
+            <!-- BOTONES -->
+
+            <button type="submit">
+
+                Confirmar cita
+
+            </button>
+
+
+            <button
+                type="button"
+                onclick="window.location.href='home.html'">
+
+                Cancelar
+
+            </button>
+
+
+        </form>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 TurnEasy | Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
